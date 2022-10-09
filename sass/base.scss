@@ -1,0 +1,26 @@
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media (max-width: 375px) {
+      @content;
+    }
+  }
+  @if $breakpoint == desktop {
+    @media (max-width: 144em) {
+      @content;
+    }
+  }
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Overpass", sans-serif;
+  box-sizing: border-box;
+}

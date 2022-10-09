@@ -1,0 +1,35 @@
+.top-margin-small {
+  margin-top: 0.7rem;
+
+  @include respond(phone) {
+    margin-top: 1rem;
+  }
+}
+
+.top-margin-mid {
+  margin-top: 2.4rem;
+}
+
+.top-margin-big {
+  margin-top: 3rem;
+
+  @include respond(phone) {
+    margin-top: 1.6rem;
+  }
+}
+
+.top-margin-large {
+  margin-top: 3.2rem;
+
+  @include respond(phone) {
+    margin-top: 2.4rem;
+  }
+}
+
+.text-centralized {
+  text-align: center;
+}
+
+.hidden {
+  display: none !important;
+}
